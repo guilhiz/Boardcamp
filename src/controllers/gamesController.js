@@ -11,9 +11,8 @@ export const getGames = async (req, res) => {
 
 export const newGames = async (req, res) => {
   const { name, image, stockTotal, pricePerDay } = req.body;
-  console.log(name, image, stockTotal, pricePerDay);
   try {
-    const games = await db.query(`INSERT INTO games (name,image,"stockTotal","pricePerDay") VALUES ($1, $2, $3, $4)`, [
+     await db.query(`INSERT INTO games (name,image,"stockTotal","pricePerDay") VALUES ($1, $2, $3, $4)`, [
       name,
       image,
       stockTotal,
