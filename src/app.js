@@ -1,5 +1,5 @@
 import express, { json } from "express";
-import router from "./src/routes/index.js";
+import router from "./routes/index.js";
 import * as dotenv from "dotenv";
 import cors from "cors";
 

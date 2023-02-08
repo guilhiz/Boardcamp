@@ -10,3 +10,5 @@ customersRouter.get("/customers/:id", getCustomersById);
 customersRouter.post("/customers", newCustomers);
 
 customersRouter.put("/customers/:id", updateCustomers);
+
+export default customersRouter
