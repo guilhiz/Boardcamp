@@ -12,11 +12,17 @@ export const getGames = async (req, res) => {
 export const newGames = async (req, res) => {
   const { name, image, stockTotal, pricePerDay } = req.body;
   try {
-     await db.query(`INSERT INTO games (name,image,"stockTotal","pricePerDay") VALUES ($1, $2, $3, $4)`, [
+    const { rows: duplicateGame } = await db.query(`
+    SELECT * FROM games WHERE name = $1
+  `, [name]);
+
+    if (duplicateGame.length > 0) return res.sendStatus(409);
+
+    await db.query(`INSERT INTO games (name,image,"stockTotal","pricePerDay") VALUES ($1, $2, $3, $4)`, [
       name,
       image,
       stockTotal,
-      pricePerDay
+      pricePerDay,
     ]);
     res.sendStatus(201);
   } catch (err) {

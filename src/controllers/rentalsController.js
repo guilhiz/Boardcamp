@@ -23,8 +23,7 @@ export const newRental = async (req, res) => {
   const returnDate = null;
   const delayFee = null;
   try {
-    await db.query(
-      `
+    await db.query(`
     INSERT INTO rentals
       ("customerId", "gameId", "rentDate", "daysRented", "returnDate", "originalPrice", "delayFee")
     VALUES
