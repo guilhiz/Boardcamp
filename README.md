@@ -17,6 +17,8 @@ Boardcamp é uma plataforma completa para gestão de uma locadora de jogos de ta
   - Preço do aluguel por dias
   - Contagem de aluguel
 - Inserir, listar e editar clientes e detalhes dos clientes
+- Registro de alugueis de jogos pelos clientes
+- Histórico de alugueis realizados pelos clientes e jogos alugados
 - Todas as pesquisas podem ser feitas com querys
 - Responsabilidades divididas entre rotas e controladores
 - Todas as entradas são validadas em relação a esquemas
