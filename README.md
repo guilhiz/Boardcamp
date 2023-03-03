@@ -20,7 +20,7 @@ Boardcamp é uma plataforma completa para gestão de uma locadora de jogos de ta
 - Registro de alugueis de jogos pelos clientes
 - Histórico de alugueis realizados pelos clientes e jogos alugados
 - Todas as pesquisas podem ser feitas com querys
-- Responsabilidades divididas entre rotas e controladores
+- Responsabilidades divididas entre routes, midllewares e controllers
 - Todas as entradas são validadas em relação a esquemas
 
 ## :robot: Tecnologias Utilizadas
