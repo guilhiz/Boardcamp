@@ -44,7 +44,6 @@ Boardcamp é uma plataforma completa para gestão de uma locadora de jogos de ta
 |   ├── 📁midllewares
 |   ├── 📁routes
 |   ├── 📁schemas
-|   ├── 📁schema
 |   └── 📄app.js
 |
 ├── 📄README.md
